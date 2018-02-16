@@ -1,0 +1,65 @@
+/*Colors
+red: #9d0000
+gray: #d7dad3
+active gray: #b0b3ad
+End Colors*/
+
+/************Reset**************/
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section { 
+	margin: 0px; 
+	padding: 0px;
+	border: 0;
+} 
+ol, ul { 
+	list-style: none; 
+}
+header, footer, nav, section, article, hgroup, figure {
+	display: block;	
+}
+legend {
+	display: none;
+}
+/************End Reset**************/
+
+/************Global**************/
+body { 
+	font: 100%/1.5 'Gill Sans', 'Droid Sans', 'Calibri', 'Lucida Grande', 'Trebuchet MS', 'Helvetica Neue', 'Arial', sans-serif; 
+	color: #000;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover, a:focus {
+	color: #000;
+}
+:target:before {
+	content:"";
+	display:block;
+	height:45px; /* fixed header height*/
+	margin:-45px 0 0; /* negative fixed header height */
+}
+#main {
+	position: absolute;
+	text-align: justify;
+	margin-left: 5px;
+	padding-right: 5px;	
+}
+#nav_normal {
+	display:none;
+}
+#leiste {
+	background-color:#333;
+	height:40px;
+	width:100%;
+	position:fixed;
+	top:5px;
+	z-index:99;"
+}
+.menu_3_striche {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
