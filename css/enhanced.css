@@ -5,7 +5,6 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
-
 li {
     float: left;
 }
@@ -13,7 +12,7 @@ li {
 li a {
     display: block;
     color: white;
-    text-align: center;
+
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -38,5 +37,12 @@ li a:hover {
 	margin-left: -210px;
 }
 #open_nav_mobile {
-	display:none;
+	display: none; 
+}
+#menu {
+	display: block!important;
+	margin-top: -41px; 
+	width: 420px;
+    left: 50%;
+    margin-left: -210px;
 }
