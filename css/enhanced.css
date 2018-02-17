@@ -1,15 +1,15 @@
-ul {
+#menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
-li {
+#menu li {
     float: left;
 }
 
-li a {
+#menu li a {
     display: block;
     color: white;
 
@@ -18,7 +18,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+#menu li a:hover {
     background-color: grey;
 }
 #main {
