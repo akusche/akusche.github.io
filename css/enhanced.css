@@ -21,14 +21,6 @@
 #menu li a:hover {
     background-color: grey;
 }
-#main {
-	position: absolute;
-	width:40.5em;
-	left:50%;
-	margin-left:-20.25em;
-	text-align:justify;
-	
-}
 #nav_normal {
 	display: inline;
 	position: absolute;
