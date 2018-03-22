@@ -15,32 +15,7 @@
     <title>Living Hope Guest House in Kathmandu</title>
     <link rel="icon" href="favicon.png">
     <link rel="localization" hreflang="de" href="lang/de.json" type="application/vnd.oftn.l10n+json"/>
-    <script type="text/javascript" src="js/i18n.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-   	<script src="js/jquery-2.2.2.min.js"></script>	
-	<script language="javascript" type="text/javascript">
-		$(document).ready(function(){
-		    $("#menu a").click(function(event){
-  				$("#menu").hide();
-			});
-    		$("#open_nav_mobile").click(function(){
-        		$("#menu").slideToggle("slow");
-    		});
-    		
-		});
-		
-
-	</script>
-	
-    <meta 	charset="utf-8">
-    <meta 	name="viewport" 
-    		content="width=device-width, initial-scale=1" />
-    <meta 	name="HandheldFriendly" 
-    		content="true">
-    <meta 	name="mobile-web-app-capable" 
-    		content="yes">
-    <meta 	name="description" 
-          	content="160 Zeichen zum Beschreiben des Inhalts">
+    
     <link 	rel="stylesheet" 
     		type="text/css" 
     		href="css/style.css" 
@@ -58,6 +33,32 @@
 			type="text/css" 
 			href="css/enhanced.css" />
 	<![endif]-->
+    
+    <script type="text/javascript" src="js/i18n.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+   	<script src="js/jquery-2.2.2.min.js"></script>	
+	<script language="javascript" type="text/javascript">
+		$(document).ready(function(){
+		    $("#menu a").click(function(event){
+  				$("#menu").hide();
+			});
+    		$("#open_nav_mobile").click(function(){
+        		$("#menu").slideToggle("slow");
+    		});
+    		
+		});
+	</script>
+	
+    <meta 	charset="utf-8">
+    <meta 	name="viewport" 
+    		content="width=device-width, initial-scale=1" />
+    <meta 	name="HandheldFriendly" 
+    		content="true">
+    <meta 	name="mobile-web-app-capable" 
+    		content="yes">
+    <meta 	name="description" 
+          	content="160 Zeichen zum Beschreiben des Inhalts">
+
 
 </head>
 <body onload="loaded()">
@@ -99,67 +100,96 @@
 		<legend>Rooms</legend>
 		All together there are 9 guestrooms with space for up to 21 guests. Three triple-rooms, five normale double-rooms and one double-room with attached bathroom. The other bathrooms, kitchens and living rooms are shared by all guests.
 		<br><br>
-		Double-Room with Attached Bathroom
+			<ul style="list-style-type:circle; padding-left: 20px;">
+				<li>Double-Room with Attached Bathroom: 2500 NRs/Room/Night (max. 2 Persons)</li>
+				<li>Double-Rooms: 2000 NRs/Room/Night (max. 2 Persons)</li>
+				<li>Triple-Rooms: 1000 NRs/Person/Night</li>
+			</ul>
+		<br>
+		For long-term stays cheaper offers can be made. <br><br>
 		<!-- Container for the image gallery -->
 		<div class="container">
-
+		  <!-- Image text -->
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
 		  <!-- Full-width images with number text -->
 		  <div class="mySlides">
-			<div class="numbertext">1 / 4</div>
-			  <img src="img/dra/dra1.jpg" style="width:100%;">
+			<div class="numbertext">1 / 8</div>
+			  <img src="img/room/room_1.jpg" style="width:100%;">
 		  </div>
 
 		  <div class="mySlides">
-			<div class="numbertext">2 / 4</div>
-			  <img src="img/dra/dra2.jpg" style="width:100%">
+			<div class="numbertext">2 / 8</div>
+			  <img src="img/room/room_2.jpg" style="width:100%">
 		  </div>
 
 		  <div class="mySlides">
-			<div class="numbertext">3 / 4</div>
-			  <img src="img/dra/dra3.jpg" style="width:100%">
+			<div class="numbertext">3 / 8</div>
+			  <img src="img/room/room_3.jpg" style="width:100%">
 		  </div>
 
 		  <div class="mySlides">
-			<div class="numbertext">4 / 4</div>
-			  <img src="img/dra/dra4.jpg" style="width:100%">
+			<div class="numbertext">4 / 8</div>
+			  <img src="img/room/room_4.jpg" style="width:100%">
+		  </div>
+		  <div class="mySlides">
+			<div class="numbertext">5 / 8</div>
+			  <img src="img/room/room_5.jpg" style="width:100%;">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">6 / 8</div>
+			  <img src="img/room/room_6.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">7 / 8</div>
+			  <img src="img/room/room_7.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">8 / 8</div>
+			  <img src="img/room/room_8.jpg" style="width:100%">
 		  </div>
 		  <!-- Next and previous buttons -->
 		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-		  <!-- Image text -->
-		  <div class="caption-container">
-			<p id="caption"></p>
-		  </div>
-
 		  <!-- Thumbnail images -->
 		  <div class="row">
 			<div class="column">
-			  <img class="demo cursor" src="img/dra/dra1.jpg" style="width:100%" onclick="currentSlide(1)" alt="2500 NRs/Room/Night (max. 2 Persons)">
+			  <img class="demo cursor" src="img/room/room_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Double Room">
 			</div>
 			<div class="column"> 
-			  <img class="demo cursor" src="img/dra/dra2.jpg" style="width:100%" onclick="currentSlide(2)" alt="2500 NRs/Room/Night (max. 2 Persons)">
+			  <img class="demo cursor" src="img/room/room_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Double Room">
 			</div>
 			<div class="column">
-			  <img class="demo cursor" src="img/dra/dra3.jpg" style="width:100%" onclick="currentSlide(3)" alt="2500 NRs/Room/Night (max. 2 Persons)">
+			  <img class="demo cursor" src="img/room/room_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Double Room"">
 			</div>
 			<div class="column">
-			  <img class="demo cursor" src="img/dra/dra4.jpg" style="width:100%" onclick="currentSlide(4)" alt="2500 NRs/Room/Night (max. 2 Persons)">
+			  <img class="demo cursor" src="img/room/room_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Double Room">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img/room/room_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Double Room with attached Bathroom">
+			</div>
+			<div class="column"> 
+			  <img class="demo cursor" src="img/room/room_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Double Room with attached Bathroom">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img/room/room_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Tripple Room">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img/room/room_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Tripple Room">
 			</div>
 		  </div>
-		</div>
-		
-		
-		<br><hr>
-		<b>Double-Rooms: 2000 NRs/Room/Night (max. 2 Persons)<b>
-		<br><hr>
-		<b>Triple-Rooms: 1000 NRs/Person/Night</b>
+		</div>	
 	</fieldset> 
 	<br>
 	<fieldset id="facilities">
  		<legend>Facilities</legend>
 		Further extras:
-		<ul style="list-style-type:circle; padding-left: 10px;">
+		<ul style="list-style-type:circle; padding-left: 20px;">
 			<li>free WiFi</li>
 			<li>fully equipped kitchens</li>
 			<li>gym room</li>
@@ -184,5 +214,10 @@
 	 </fieldset> 
 	 <footer> Design & Umsetzung by Alexander Kusche</footer>
 	</div>
+	
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+	</script>
 </body>
 </html>
