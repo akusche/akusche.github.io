@@ -18,8 +18,7 @@ function loaded()
 	localizeHTMLTag("anfahrt");
 	localizeHTMLTag("kontakt");
 	
-	var slideIndex = 1;
-	showSlides(slideIndex);
+	
 }
 
 
@@ -46,6 +45,38 @@ function getParameterValue(parameter)
 	else
 		return results[1];
 }
+/* Slider top */
+  var slideIndexTop = 1;
+  showSlidesTop(slideIndexTop);
+
+// Next/previous controls
+function plusSlidesTop(n) {
+  showSlidesTop(slideIndexTop += n);
+}
+
+// Thumbnail image controls
+function currentSlideTop(n) {
+  showSlidesTop(slideIndexTop = n);
+}
+
+function showSlidesTop(n) {
+  var i;
+  var slidesTop = document.getElementsByClassName("mySlidesTop");
+  var dots = document.getElementsByClassName("dotTop");
+  if (n > slidesTop.length) {slideIndexTop = 1} 
+  if (n < 1) {slideIndexTop = slidesTop.length}
+  for (i = 0; i < slidesTop.length; i++) {
+      slidesTop[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" activeTop", "");
+  }
+  slidesTop[slideIndexTop-1].style.display = "block"; 
+  dots[slideIndexTop-1].className += " activeTop";
+}
+
+
+/*  Bilder Gallery*/
 
 
 function plusSlides(n) {
@@ -73,5 +104,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
     
