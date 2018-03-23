@@ -26,7 +26,8 @@ legend {
 //* {box-sizing:border-box}
 
 /* Slideshow container */
-.slideshow-container {
+
+.slideshow-containerTop {
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -40,8 +41,6 @@ legend {
 /* Next & previous buttons */
 .prevTop, .nextTop {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -99,7 +98,7 @@ legend {
 }
 
 .activeTop, .dotTop:hover {
-  background-color: #717171;
+  background-color: #FFF;
 }
 
 /* Fading animation */
@@ -231,6 +230,10 @@ body {
 	height:45px; /* fixed header height*/
 	margin:-45px 0 0; /* negative fixed header height */
 }
+#alex_sunita {
+	width:100%;
+}
+
 #main {
 	position: absolute;
 	text-align: justify;

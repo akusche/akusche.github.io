@@ -61,7 +61,7 @@
 
 
 </head>
-<body onload="loaded()" contenteditable="false">
+<body onload="loaded()">
 	<header role="banner">
 		<div id="leiste">
 			<div id="open_nav_mobile" style="position:fixed;top:5px;left:5px;">
@@ -89,53 +89,47 @@
 	background-size:100%; auto; height:auto; max-width: 100%"> -->
 	<!--<img src="img/background_small.jpg" style="max-width: 100%; margin-top: 50px;">-->
 	<!-- Slideshow container -->
-	<div class="slideshow-container">
+	<div class="slideshow-containerTop">
   		<!-- Full-width images with number and caption text -->
   			<div class="mySlidesTop fadeTop">
-   			<div class="numbertextTop">1 / 5</div>
     		<img src="img/view/view_1.jpg" style="width:100%">
     		<div class="textTop"></div>
  			 </div>
  			<div class="mySlidesTop fadeTop">
-    		<div class="numbertextTop">2 / 5</div>
     		<img src="img/view/view_2.jpg" style="width:100%">
    			 <div class="textTop"></div>
   			</div>
   			<div class="mySlidesTop fadeTop">
-    		<div class="numbertextTop">3 / 5</div>
     		<img src="img/view/view_3.jpg" style="width:100%">
     		<div class="textTop"></div>
     		</div>
     		
     		<div class="mySlidesTop fadeTop">
-    		<div class="numbertextTop">4 / 5</div>
     		<img src="img/view/view_4.jpg" style="width:100%">
     		<div class="textTop"></div>
     		</div>
     		<div class="mySlidesTop fadeTop">
-    		<div class="numbertextTop">5 / 5</div>
     		<img src="img/view/view_5.jpg" style="width:100%">
     		<div class="textTop"></div>
     		</div>
-	      <!-- Next and previous buttons -->
-	  	<!--<a class="prevTop" onclick="plusSlidesTop(-1)">&#10094;</a>
-  		<a class="nextTop" onclick="plusSlidesTop(1)">&#10095;</a>-->
- 	 </div>
-<br>
+   		</div>
 <!-- The dots/circles -->
-<div style="text-align:center">
+<div style="text-align:center; position: relative; top: -33px;">
+<a class="prevTop" onclick="plusSlidesTop(-1)">&#10094;</a>
   <span class="dotTop" onclick="currentSlideTop(1)"></span> 
   <span class="dotTop" onclick="currentSlideTop(2)"></span> 
   <span class="dotTop" onclick="currentSlideTop(3)"></span> 
   <span class="dotTop" onclick="currentSlideTop(4)"></span> 
   <span class="dotTop" onclick="currentSlideTop(5)"></span> 
+<a class="nextTop" onclick="plusSlidesTop(1)">&#10095;</a>
 </div>
 	<div id="main">
 	<fieldset id="ueber_uns">
 		<legend>About us</legend>
+		<img src="img/sunita_alex.jpg" id="alex_sunita">
 		The Living Hope Guest House offers a relaxing and peaceful accomodation characterized by a unique fusion of Nepali hospitality and German living standard. Sunita and Alexander do their best to create a place of rest for every guest in the otherwise quite noisy Kathmandu.
-		<br><br>
 		The near Ringroad makes day trips by bus or taxi to famous sights in Kathmandu very easy. Supermarkets can be reached by walk within a few minutes. A lot of good cafés and restaurants can be found nearby in Jawalakhel and Jhamsikhel.
+	
 	</fieldset>
 	<br>	
 	<fieldset id="rooms">
@@ -260,7 +254,7 @@
 	
 	<script>
 		showSlidesTop(slideIndexTop);
-		
+		showSlidesTopLoop();
 		var slideIndex = 1;
 		showSlides(slideIndex);
 	</script>
