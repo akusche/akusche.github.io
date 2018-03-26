@@ -12,7 +12,7 @@
 #menu li a {
     display: block;
     color: white;
-    padding: 8px 16px;
+    padding: 0px 16px;
     text-decoration: none;
 }
 
@@ -33,9 +33,9 @@
 #menu {
 	display: block!important;
 	margin-top: -41px; 
-	width: 420px;
+	width: 400px;
     left: 50%;
-    margin-left: -210px;
+    margin-left: -200px;
 }
 #alex_sunita {
 	width:40%;
@@ -43,6 +43,6 @@
 	margin-left:10px;
 }
 .column_facilities {
-  width: 33%;
+  width: 33.3333%;
   float:left;
 }
