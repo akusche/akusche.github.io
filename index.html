@@ -71,16 +71,16 @@
 			</div>
 			<div id="menu">
 				<ul>
-  					<li><a id="aboutus" href="#ueber_uns">About us</a></li>
-  					<li><a id="rooms" href="#kurse">Rooms</a></li>
-  					<li><a id="price" href="#preise">Facilities</a></li>
-  					<li><a id="contact" href="#kontakt">Contact</a></li>
+  					<li><a href="#ueber_uns">About us</a></li>
+  					<li><a href="#rooms">Rooms</a></li>
+  					<li><a href="#facilities">Facilities</a></li>
+  					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 			
 			<div style="position:fixed;right:0px;top:10px;float:right;margin-right:20px; z-index:98;">
   				<a id="showinenglish" href="index.html?lang=en">en</a>&nbsp;&nbsp;&nbsp;&nbsp;
-  				<a id="showingerman" href="index.html?lang=de">de</a></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  				<a id="showingerman" href="index.html?lang=de"></a></a>&nbsp;&nbsp;&nbsp;&nbsp;
 			</div>
 		</div>
 	</header>
@@ -119,17 +119,20 @@
 <a class="nextTop" onclick="plusSlidesTop(1)">&#10095;</a>
 </div>
 	<div id="main">
-	<fieldset id="ueber_uns">
+	<span id="ueber_uns">
+	<br>
+	<fieldset>
 		<legend>About us</legend>
 		<img src="img/sunita_alex.jpg" id="alex_sunita">
 		The Living Hope Guest House offers a relaxing and peaceful accomodation characterized by a unique fusion of Nepali hospitality and German living standard. Sunita and Alexander do their best to create a place of rest for every guest in the otherwise quite noisy Kathmandu.
 		The near Ringroad makes day trips by bus or taxi to famous sights in Kathmandu very easy. Supermarkets can be reached by walk within a few minutes. A lot of good cafés and restaurants can be found nearby in Jawalakhel and Jhamsikhel.
 	
 	</fieldset>
+	<span id="rooms">
 	<br>	
-	<fieldset id="rooms">
+	<fieldset>
 		<legend>Rooms</legend>
-		All together there are 9 guestrooms with space for up to 21 guests. Three triple-rooms, five normale double-rooms and one double-room with attached bathroom. The other bathrooms, kitchens and living rooms are shared by all guests.
+		All together there are 9 guestrooms with space for up to 21 guests. Three triple rooms, five standard double rooms and one double room with attached bathroom. The other bathrooms, kitchens and living rooms are shared by all guests.
 		<br><br>
 		<!-- Container for the image gallery -->
 		<div class="container">
@@ -201,44 +204,66 @@
 			  <img class="demo cursor" src="img/room/room_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Room with attached Bathroom">
 			</div>
 			<div class="column">
-			  <img class="demo cursor" src="img/room/room_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Tripple Room">
+			  <img class="demo cursor" src="img/room/room_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Triple Room">
 			</div>
 			<div class="column">
-			  <img class="demo cursor" src="img/room/room_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Tripple Room">
+			  <img class="demo cursor" src="img/room/room_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Triple Room">
 			</div>
 		  </div>
 		</div>	
 		<br>
 		<ul style="list-style-type:circle; padding-left: 20px;">
-				<li>Double-Room with Attached Bathroom: 2500 NRs/Room/Night (max. 2 Persons)</li>
-				<li>Double-Rooms: 2000 NRs/Room/Night (max. 2 Persons)</li>
-				<li>Triple-Rooms: 1000 NRs/Person/Night</li>
+				<li>Double room with Attached Bathroom: 2500 NRs/Room/Night (max. 2 Persons)</li>
+				<li>Double rooms: 2000 NRs/Room/Night (max. 2 Persons)</li>
+				<li>Triple rooms: 1000 NRs/Person/Night</li>
 			</ul>
 		<br>
 		For long-term stays cheaper offers can be made.
 	</fieldset> 
+	<span id="facilities">
 	<br>
-	<fieldset id="facilities">
+	<fieldset>
  		<legend>Facilities</legend>
-		Further extras:
-		<ul style="list-style-type:circle; padding-left: 20px;">
-			<li>free WiFi</li>
-			<li>fully equipped kitchens</li>
-			<li>gym room</li>
-			<li>roofterrace with space to hang out</li>
-			<li>hair dryer</li>
-			<li>laundry service*</li>
-			<li>barbecue*</li>
-		</ul>
-		<br>*for a fee<br> 
-	</fieldset>
+		<!-- Photo Grid -->
+		<div class="row"> 
+			<div class="column_facilities">
+			Further extras:
+			<ul style="list-style-type:circle; padding-left: 20px;">
+				<li>free WiFi</li>
+				<li>fully equipped kitchens</li>
+				<li>gym room</li>
+				<li>roofterrace with space to hang out</li>
+				<li>hair dryer</li>
+				<li>laundry service*</li>
+				<li>barbecue*</li>
+			</ul>
+			<br>*for a fee<br> 
+			<img src="img/facilities/facilities_5.jpg" style="width:100%">
+			<img src="img/facilities/facilities_9.jpg" style="width:100%">
+			<img src="img/facilities/facilities_10.jpg" style="width:100%">
+		  </div>
+		  <div class="column_facilities">
+			<img src="img/facilities/facilities_1.jpg" style="width:100%">
+			<img src="img/facilities/facilities_2.jpg" style="width:100%">
+			<img src="img/facilities/facilities_3.jpg" style="width:100%">
+			<img src="img/facilities/facilities_8.jpg" style="width:100%">
+			<img src="img/facilities/facilities_6.jpg" style="width:100%">
+		  </div> 
+		  <div class="column_facilities">
+			<img src="img/facilities/facilities_4.jpg" style="width:100%">
+			<img src="img/facilities/facilities_7.jpg" style="width:100%">
+		  </div>
+
+		</div>
+</fieldset>
+	<span id="contact">
 	<br>
-	<fieldset id="contact">
+	<fieldset>
  		<legend>Contact</legend>
  			<img src="img/stamp_transparent_130_130.png" style="float:right;">
  			Living Hope Guest House<br><br>
   		  	Alexander & Sunita Dick<br>
-  			Bagdolbr<br>
+  			Bagdol<br>
   			Lalitpur, Kathmandu, Nepal<br><br>
   			Email:	<a href="mailto:livinghopeghnp@gmail.com">livinghopeghnp@gmail.com</a><br>
   			<br><br>

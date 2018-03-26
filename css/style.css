@@ -197,6 +197,12 @@ legend {
   width: 25%;
 }
 
+
+.column_facilities {
+  width: 100%;
+  float:left;
+}
+
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;

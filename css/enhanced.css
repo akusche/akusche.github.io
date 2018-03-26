@@ -38,7 +38,11 @@
     margin-left: -210px;
 }
 #alex_sunita {
-	width:33%;
+	width:40%;
 	float:right; 
 	margin-left:10px;
+}
+.column_facilities {
+  width: 33%;
+  float:left;
 }
