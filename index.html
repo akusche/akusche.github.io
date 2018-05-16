@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
 	
@@ -34,9 +34,11 @@
 			href="css/enhanced.css" />
 	<![endif]-->
     
-    <script type="text/javascript" src="js/i18n.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+
+    <script src="js/script.js"></script>
    	<script src="js/jquery-2.2.2.min.js"></script>	
+   	<script src="js/translate.js"></script>	
+   	
 	<script language="javascript" type="text/javascript">
 		$(document).ready(function(){
 		    $("#menu a").click(function(event){
@@ -47,6 +49,9 @@
     		});
     		
 		});
+		$.i18n( {
+    		locale: 'en' // Locale is English
+		} );
 	</script>
 	
     <meta 	charset="utf-8">
@@ -71,16 +76,16 @@
 			</div>
 			<div id="menu">
 				<ul>
-  					<li><a href="#about_us">About us</a></li>
-  					<li><a href="#rooms">Rooms</a></li>
-  					<li><a href="#facilities">Facilities</a></li>
-  					<li><a href="#contact">Contact</a></li>
+  					<li><a href="#about_us" key="headline_1" class="trn"></a></li>
+  					<li><a href="#rooms" 	key="headline_2" class="trn"></a></li>
+  					<li><a href="#facilities" key="headline_3" class="trn"></a></li>
+  					<li><a href="#contact"	key="headline_4" class="trn"></a></li>
 				</ul>
 			</div>
 			
-			<div style="position:fixed;right:0px;top:10px;float:right;margin-right:20px; z-index:98;">
-  				<a id="showinenglish" href="index.html?lang=en">en</a> | 
-  				<a id="showingerman" href="index.html?lang=de">de</a></a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<div style="position:fixed;right:0px;top:10px;float:right;margin-right:20px; z-index:98; font-weight: bold;">
+  				<a href="#" id="en" class="lang">en</a> | 
+				<a href="#" id="de" class="lang">de</a>
 			</div>
 		</div>
 	</header>
@@ -121,16 +126,15 @@
 	<div id="main">
 	<span id="about_us">
 	<fieldset>
-		<legend>About us</legend>
+		<legend key="headline_1" class="trn"></legend>
 		<img src="img/sunita_alex.jpg" id="alex_sunita">
-		The Living Hope Guest House offers a relaxing and peaceful accomodation characterized by a unique fusion of Nepali hospitality and German living standard. Sunita and Alexander do their best to create a place of rest for every guest in the otherwise quite noisy Kathmandu.
-		The near Ringroad makes day trips by bus or taxi to famous sights in Kathmandu very easy. Supermarkets can be reached by walk within a few minutes. A lot of good cafés and restaurants can be found nearby in Jawalakhel and Jhamsikhel.
+		<span key="headline_1_text" class="trn"><span>
 	</fieldset>
 	<span id="rooms">
 	<br>	
 	<fieldset>
-		<legend>Rooms</legend>
-		All together there are 9 guestrooms with space for up to 21 guests. Three triple rooms, five standard double rooms and one double room with attached bathroom. The other bathrooms, kitchens and living rooms are shared by all guests.
+		<legend key="headline_2" class="trn"></legend>
+		<span key="headline_2_text" class="trn"></span>
 		<br><br>
 		<!-- Container for the image gallery -->
 		<div class="container">
@@ -211,31 +215,31 @@
 		</div>	
 		<br>
 		<ul style="list-style-type:circle; padding-left: 20px;">
-				<li>Double room with Attached Bathroom: 2500 NRs/Room/Night (max. 2 Persons)</li>
-				<li>Double rooms: 2000 NRs/Room/Night (max. 2 Persons)</li>
-				<li>Triple rooms: 1000 NRs/Person/Night</li>
+				<li key="headline_2_text_2" class="trn"></li>
+				<li key="headline_2_text_3" class="trn"></li>
+				<li key="headline_2_text_4" class="trn"></li>
 			</ul>
 		<br>
-		For long-term stays cheaper offers can be made.
+		<span key="headline_2_text_5" class="trn"></span>
 	</fieldset> 
 	<span id="facilities">
 	<br>
 	<fieldset>
- 		<legend>Facilities</legend>
+ 		<legend key="headline_3" class="trn"></legend>
 		<!-- Photo Grid -->
 		<div class="row"> 
 			<div class="column_facilities">
-			Further extras:
+				<span key="headline_3_text" class="trn"></span>
 			<ul style="list-style-type:circle; padding-left: 20px;">
-				<li>free WiFi</li>
-				<li>fully equipped kitchens</li>
-				<li>gym room</li>
-				<li>roofterrace with space to hang out</li>
-				<li>hair dryer</li>
-				<li>laundry service*</li>
-				<li>barbecue*</li>
+				<li key="headline_3_text_2" class="trn"></li>
+				<li key="headline_3_text_3" class="trn"></li>
+				<li key="headline_3_text_4" class="trn"></li>
+				<li key="headline_3_text_5" class="trn"></li>
+				<li key="headline_3_text_6" class="trn"></li>
+				<li key="headline_3_text_7" class="trn"></li>
+				<li key="headline_3_text_8" class="trn"></li>
 			</ul>
-			<br>*for a fee<br><br> 
+			<br><span key="headline_3_text_9" class="trn"></span><br><br> 
 			<img src="img/facilities/facilities_5.jpg" style="width:100%">
 			<img src="img/facilities/facilities_9.jpg" style="width:100%">
 			<img src="img/facilities/facilities_10.jpg" style="width:100%">
@@ -257,18 +261,21 @@
 	<span id="contact">
 	<br>
 	<fieldset>
- 		<legend>Contact</legend>
+ 		<legend key="headline_4" class="trn"></legend>
  			<img src="img/stamp_transparent_130_130.png" style="float:right;">
  			Living Hope Guest House<br><br>
   		  	Alexander & Sunita Dick<br>
   			Bagdol<br>
   			Lalitpur, Kathmandu, Nepal<br><br>
   			Email:	<a href="mailto:livinghopeghnp@gmail.com">livinghopeghnp@gmail.com</a><br>
-  			Phone: 	<a href="tel:+977 980-3928032">+977 980-3928032</a><br>
+  			<span key="headline_4_text" class="trn"></span> <a href="tel:+977 980-3928032">+977 980-3928032</a><br>
   			<br><br>
   			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.3796612955392!2d85.30269592921884!3d27.670360698925478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb183aa822d077%3A0x2681a5b1dd015ac6!2sLiving+Hope+Guesthouse!5e0!3m2!1sde!2sch!4v1521791874864" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   			</fieldset> 
-	 <footer> design & realisation by A. Kusche &copy; 2018<br><a href="http://einblick-foto.de/impressum/" target="_blank">photos by E. Baumann &copy; 2018</a></footer>
+	 <footer>
+	 	<span key="headline_4_text_2" class="trn"></span> <br>
+	 	<span key="headline_4_text_3" class="trn"><a href="http://einblick-foto.de/impressum/" target="_blank"></a></span>
+	 </footer>
 	</div>
 	
 	<script>
