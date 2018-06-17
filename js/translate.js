@@ -72,45 +72,45 @@ t['de']['headline_4_text_3']='Fotos durch E. Baumann © 2018';
 t['es']['headline_4_text_3']='Fotos por E. Baumann © 2018';
 
 $(document).ready(function() {	
-//initilize the default lang
-var lang = 'en';	
-// check for language cookie	
-if(langs.indexOf(getCookie("lang")) > -1) { 
-lang = getCookie("lang"); }	
-// else check for browser language	
-else if (navigator.language.indexOf("de") > -1) { lang = 'de'; } 	
-else if (navigator.language.indexOf("es") > -1) { lang = 'es'; }
-$('.trn').each(function(i){        
-	$(this).text(t[lang][ $(this).attr('key') ]);
-});   
-// onclick behavior   
-$('.lang').click( function() {        
-	var lang = $(this).attr('id');     
-	setCookie("lang", lang, "30");
-        alert(getCookie("lang"));
+	//initilize the default lang
+	var lang = 'en';
+	alert(lang);
+	// check for language cookie	
+	if(langs.indexOf(getCookie("lang")) > -1) { lang = getCookie("lang"); }	
+	// else check for browser language	
+	else if (navigator.language.indexOf("de") > -1) { lang = 'de'; } 	
+	else if (navigator.language.indexOf("es") > -1) { lang = 'es'; }
 	$('.trn').each(function(i){        
 		$(this).text(t[lang][ $(this).attr('key') ]);
-        });
-} );        
-function setCookie(cname, cvalue, exdays) {    	
-	var d = new Date();   	
-	d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    	var expires = "expires="+ d.toUTCString();
-    	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-	
-function getCookie(cname) {
-   var name = cname + "=";
-   var decodedCookie = decodeURIComponent(document.cookie);
-   var ca = decodedCookie.split(';');
-   for(var i = 0; i <ca.length; i++) {
-       var c = ca[i];
-       while (c.charAt(0) == ' ') {
-       	c = c.substring(1);
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";	
-}
+	});   
+	// onclick behavior   
+	$('.lang').click( function() {        
+		var lang = $(this).attr('id');     
+		setCookie("lang", lang, "30");
+		alert(getCookie("lang"));
+		$('.trn').each(function(i){        
+			$(this).text(t[lang][ $(this).attr('key') ]);
+		});
+	} );        
+	function setCookie(cname, cvalue, exdays) {    	
+		var d = new Date();   	
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function getCookie(cname) {
+	   var name = cname + "=";
+	   var decodedCookie = decodeURIComponent(document.cookie);
+	   var ca = decodedCookie.split(';');
+	   for(var i = 0; i <ca.length; i++) {
+	       var c = ca[i];
+	       while (c.charAt(0) == ' ') {
+		c = c.substring(1);
+		if (c.indexOf(name) == 0) {
+		    return c.substring(name.length, c.length);
+		}
+	    }
+	    return "";	
+	}
 });
