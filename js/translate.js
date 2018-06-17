@@ -87,11 +87,11 @@ var langs = ["en", "de", "es"];
 	
 	t['en']['headline_4_text_2']='design & realisation by A. Kusche © 2018';
 	t['de']['headline_4_text_2']='Design & Umsetzung durch A. Kusche © 2018';
-	t['es']['headline_4_text_2']='design & realisation by A. Kusche © 2018';
+	t['es']['headline_4_text_2']='diseño y realización por A. Kusche © 2018';
 	
 	t['en']['headline_4_text_3']='photos by E. Baumann © 2018';
 	t['de']['headline_4_text_3']='Fotos durch E. Baumann © 2018';
-	t['es']['headline_4_text_3']='photos by E. Baumann © 2018';
+	t['es']['headline_4_text_3']='fotos por E. Baumann © 2018';
 
 $(document).ready(function() {
 	//initilize the default lang
