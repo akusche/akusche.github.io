@@ -14,7 +14,7 @@ var langs = ["en", "de", "es"];
 	
 	t['en']['headline_3']='Facilities';
 	t['de']['headline_3']='Ausstattung';
-	t['es']['headline_3']='Instalaciones';
+	t['es']['headline_3']='Instalaciones y servicios';
 		
 	t['en']['headline_4']='Contact';
 	t['de']['headline_4']='Kontakt';
