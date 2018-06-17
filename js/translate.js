@@ -110,7 +110,6 @@ $(document).ready(function() {
     $('.lang').click( function() {
         var lang = $(this).attr('id');
         setCookie("lang", lang, "30");
-        alert(getCookie("lang"));
         $('.trn').each(function(i){
           $(this).text(t[lang][ $(this).attr('key') ]);
         });
