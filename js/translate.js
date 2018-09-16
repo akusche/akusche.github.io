@@ -24,9 +24,9 @@ var langs = ["en", "de", "es"];
 	t['de']['headline_1_text']='Das Living Hope Guest House bietet eine wohltuend friedliche Unterkunft, ausgezeichnet durch eine einzigartige Fusion nepalesischer Gastfreundschaft mit deutschem Wohnstandard. Sunita und Alexander tun ihr Bestes, um jedem Gast in dem sonst so lärmigen Kathmandu einen Ort der Ruhe zu schaffen. Die naheliegende Hauptstraße ermöglicht einfache Ausflüge per Bus oder Taxi zu den beliebtesten Sehenswürdigkeiten in Kathmandu. Supermärkte sind in wenigen Minuten zu Fuß erreichbar. Auch zu den mit Cafés und Restaurants übersäten Stadtteilen Jawalakhel und Jhamsikhel ist es nicht weit.';	
 	t['es']['headline_1_text']='La Living Hope Guest House ofrece un alojamiento relajante y tranquilo caracterizado por una fusión única de la hospitalidad Nepalí y el estándar de vida Alemán. Sunita y Alexander hacen todo lo posible para crear un lugar de descanso para que cada uno de nuestros huéspedes puedan olvidarse de la ruidosa Katmandú. En las cercanías, Ringroad hace que los viajes de un día a lugares de interés turístico a Katmandú sean muy sencillos a través de autobús o taxi. En los alrededores se puede llegar a los supermercados en unos pocos minutos a pie, al igual que a buenos cafés y restaurantes ubicados en Jawalakhel y Jhamsikhel.';	
 	
-	t['en']['headline_2_text']='All together there are 9 guestrooms with space for up to 21 guests. Three triple rooms, five standard double rooms and one double room with attached bathroom. The other bathrooms, kitchens and living rooms are shared by all guests.';
-	t['de']['headline_2_text']='Insgesamt verfügen wir über 9 Gästezimmer mit Platz für bis zu 21 Gäste.  Drei 3er-Zimmer, fünf normale Doppelzimmer und ein Doppelzimmer mit eigenem Bad. Die anderen Badezimmer, Küchen und Aufenthaltsräume werden von allen Gästen gemeinsam genutzt.';
-	t['es']['headline_2_text']='Contamos con un total de 9 habitaciones con espacio para 21 huéspedes. Tres habitaciones triples, cinco habitaciones estándar dobles y una habitación doble con baño privado. El resto de baños, cocinas y salas de estar son estancias compartidas.';
+	t['en']['headline_2_text']='All together there are 6 guestrooms with space for up to 12 persons. Five standard double rooms and one double room with attached bathroom. On every floor there is one bathroom, one kitchen and one living room which are shared by the guests.';
+	t['de']['headline_2_text']='Insgesamt verfügen wir über 6 Gästezimmer mit Platz für bis zu 12 Personen. Fünf normale Doppelzimmer und ein Doppelzimmer mit eigenem Bad. Die Zimmer sind auf 2 Etagen aufgeteilt. Auf jeder Etage befinden sich zudem ein Badezimmer, eine Küche und ein Aufenthaltsraum, die von den Gästen gemeinsam genutzt werden.';
+	t['es']['headline_2_text']='Contamos con un total de 6 habitaciones con espacio para 12 huéspedes. Cinco habitaciones estándar dobles y una habitación doble con baño privado. El resto de baños, cocinas y salas de estar son estancias compartidas.';
 	
 	t['en']['headline_2_text_2']='Double room with Attached Bathroom: 2500 NRs/Room/Night (max. 2 Persons)';
 	t['de']['headline_2_text_2']='Doppelzimmer mit eigenem Bad: 2500 NRs/Zimmer/Nacht (max. 2 Personen)';
@@ -36,13 +36,9 @@ var langs = ["en", "de", "es"];
 	t['de']['headline_2_text_3']='Doppelzimmer: 2000 NRs/Zimmer/Nacht (max. 2 Personen)';	
 	t['es']['headline_2_text_3']='Habitaciones dobles con baño compartido: 2000 NRs / Habitación / Noche (máximo 2 personas)';	
 	
-	t['en']['headline_2_text_4']='Triple rooms: 1000 NRs/Person/Night';
-	t['de']['headline_2_text_4']='3er-Zimmer: 1000 NRs/Person/Nacht';	
-	t['es']['headline_2_text_4']='Habitaciones triples: 1000 NRs por persona / Noche';
-	
-	t['en']['headline_2_text_5']='For long-term stays cheaper offers can be made.';
-	t['de']['headline_2_text_5']='Für längere Aufenthalte kann über günstigere Preise gesprochen werden.';	
-	t['es']['headline_2_text_5']='Para estancias a largo plazo se pueden realizar ofertas más económicas.';		
+	t['en']['headline_2_text_4']='For long-term stays cheaper offers can be made.';
+	t['de']['headline_2_text_4']='Für längere Aufenthalte kann über günstigere Preise gesprochen werden.';	
+	t['es']['headline_2_text_4']='Para estancias a largo plazo se pueden realizar ofertas más económicas.';		
 	
 	t['en']['headline_3_text']='Further extras:';
 	t['de']['headline_3_text']='Weitere Extras:';
@@ -56,9 +52,6 @@ var langs = ["en", "de", "es"];
 	t['de']['headline_3_text_3']='voll ausgestattete Küchen zur freien Verfügung';
 	t['es']['headline_3_text_3']='Cocinas completamente equipadas';	
 	
-	t['en']['headline_3_text_4']='gym room';
-	t['de']['headline_3_text_4']='Fitnessraum';	
-	t['es']['headline_3_text_4']='Gimnasio';	
 	
 	t['en']['headline_3_text_5']='roofterrace with space to hang out';
 	t['de']['headline_3_text_5']='Dachterrasse mit Sitzmöglichkeiten';
