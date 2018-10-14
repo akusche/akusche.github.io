@@ -109,49 +109,6 @@ var langs = ["en", "de", "es"];
 	t['en']['headline_4_text_3']='photos by E. Baumann © 2018';
 	t['de']['headline_4_text_3']='Fotos durch E. Baumann © 2018';
 	t['es']['headline_4_text_3']='fotos por E. Baumann © 2018';
-
-$(document).ready(function() {
-	//initilize the default lang
-	var lang = 'en';	
-	// check for language cookie
-	if(langs.indexOf(getCookie("lang")) > -1) { lang = getCookie("lang"); }
-	// else check for browser language
-	else if (navigator.language.indexOf("de") > -1) { lang = 'de'; }
-   	else if (navigator.language.indexOf("es") > -1) { lang = 'es'; }
-
-    $('.trn').each(function(i){
-        $(this).text(t[lang][ $(this).attr('key') ]);
-    });
-    //spezial treatment for image gallery alt texts
-    $("#image_gallery_1").attr('alt',t[lang]['image_gallery_1']);
-    $("#image_gallery_2").attr('alt',t[lang]['image_gallery_2']);
-    $("#image_gallery_3").attr('alt',t[lang]['image_gallery_3']);
-    $("#image_gallery_4").attr('alt',t[lang]['image_gallery_4']);
-	$("#image_gallery_5").attr('alt',t[lang]['image_gallery_5']);
-	$("#image_gallery_6").attr('alt',t[lang]['image_gallery_6']);	
-
-    // onclick behavior
-    $('.lang').click( function() {
-        var lang = $(this).attr('id');
-        setCookie("lang", lang, "30");
-        $('.trn').each(function(i){
-          $(this).text(t[lang][ $(this).attr('key') ]);
-        });
-        //spezial treatment for image gallery alt texts
-        $("#image_gallery_1").attr('alt',t[lang]['image_gallery_1']);
-        $("#image_gallery_2").attr('alt',t[lang]['image_gallery_2']);
-        $("#image_gallery_3").attr('alt',t[lang]['image_gallery_3']);
-        $("#image_gallery_4").attr('alt',t[lang]['image_gallery_4']);
-		$("#image_gallery_5").attr('alt',t[lang]['image_gallery_5']);
-		$("#image_gallery_6").attr('alt',t[lang]['image_gallery_6']);
-    } );
-    
-    function setCookie(cname, cvalue, exdays) {
-    	var d = new Date();
-    	d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    	var expires = "expires="+ d.toUTCString();
-    	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-	}
 	
 	function getCookie(cname) {
    		var name = cname + "=";
@@ -168,4 +125,35 @@ $(document).ready(function() {
     		}
    		return "";
 	}
+	
+$(document).ready(function() {
+	//initilize the default lang
+	var lang = 'en';	
+	// check for language cookie
+	if(langs.indexOf(getCookie("lang")) > -1) { lang = getCookie("lang"); }
+	// else check for browser language
+	else if (navigator.language.indexOf("de") > -1) { lang = 'de'; }
+   	else if (navigator.language.indexOf("es") > -1) { lang = 'es'; }
+
+    $('.trn').each(function(i){
+        $(this).text(t[lang][ $(this).attr('key') ]);
+    });
+
+    // onclick behavior
+    $('.lang').click( function() {
+        var lang = $(this).attr('id');
+        setCookie("lang", lang, "30");
+        $('.trn').each(function(i){
+          $(this).text(t[lang][ $(this).attr('key') ]);
+        });
+    } );
+    
+    function setCookie(cname, cvalue, exdays) {
+    	var d = new Date();
+    	d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    	var expires = "expires="+ d.toUTCString();
+    	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+	
+
 });
