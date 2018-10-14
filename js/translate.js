@@ -28,6 +28,30 @@ var langs = ["en", "de", "es"];
 	t['de']['headline_2_text']='Insgesamt verfügen wir über 6 Gästezimmer mit Platz für bis zu 12 Personen. Fünf normale Doppelzimmer und ein Doppelzimmer mit eigenem Bad. Die Zimmer sind auf 2 Etagen aufgeteilt. Auf jeder Etage befinden sich zudem ein Badezimmer, eine Küche und ein Aufenthaltsraum, die von den Gästen gemeinsam genutzt werden.';
 	t['es']['headline_2_text']='Contamos con un total de 6 habitaciones con espacio para 12 huéspedes. Cinco habitaciones estándar dobles y una habitación doble con baño privado. El resto de baños, cocinas y salas de estar son estancias compartidas.';
 	
+	t['en']['image_gallery_1']='Double Room';
+	t['de']['image_gallery_1']='Doppeltzimmer';
+	t['es']['image_gallery_1']='Habitación doble';
+	
+	t['en']['image_gallery_2']='Double Room';
+	t['de']['image_gallery_2']='Doppeltzimmer';
+	t['es']['image_gallery_2']='Habitación doble';
+	
+	t['en']['image_gallery_3']='Double Room';
+	t['de']['image_gallery_3']='Doppeltzimmer';
+	t['es']['image_gallery_3']='Habitación doble';
+	
+	t['en']['image_gallery_4']='Double Room';
+	t['de']['image_gallery_4']='Doppeltzimmer';
+	t['es']['image_gallery_4']='Habitación doble';
+	
+	t['en']['image_gallery_5']='Room with attached Bathroom';
+	t['de']['image_gallery_5']='Doppeltzimmer mit Bad';
+	t['es']['image_gallery_5']='Habitación doble con baño';
+	
+	t['en']['image_gallery_6']='Room with attached Bathroom';
+	t['de']['image_gallery_6']='Doppeltzimmer mit Bad';
+	t['es']['image_gallery_6']='Habitación doble con baño';
+		
 	t['en']['headline_2_text_2']='Double room with Attached Bathroom: 2500 NRs/Room/Night (max. 2 Persons)';
 	t['de']['headline_2_text_2']='Doppelzimmer mit eigenem Bad: 2500 NRs/Zimmer/Nacht (max. 2 Personen)';
 	t['es']['headline_2_text_2']='Habitación doble con baño privado: 2500 NRs / Habitación / Noche (máximo 2 personas)';
@@ -98,6 +122,13 @@ $(document).ready(function() {
     $('.trn').each(function(i){
         $(this).text(t[lang][ $(this).attr('key') ]);
     });
+    //spezial treatment for image gallery alt texts
+    $("#image_gallery_1").attr('alt',t[lang]['image_gallery_1']);
+    $("#image_gallery_2").attr('alt',t[lang]['image_gallery_2']);
+    $("#image_gallery_3").attr('alt',t[lang]['image_gallery_3']);
+    $("#image_gallery_4").attr('alt',t[lang]['image_gallery_4']);
+	$("#image_gallery_5").attr('alt',t[lang]['image_gallery_5']);
+	$("#image_gallery_6").attr('alt',t[lang]['image_gallery_6']);	
 
     // onclick behavior
     $('.lang').click( function() {
@@ -106,6 +137,13 @@ $(document).ready(function() {
         $('.trn').each(function(i){
           $(this).text(t[lang][ $(this).attr('key') ]);
         });
+        //spezial treatment for image gallery alt texts
+        $("#image_gallery_1").attr('alt',t[lang]['image_gallery_1']);
+        $("#image_gallery_2").attr('alt',t[lang]['image_gallery_2']);
+        $("#image_gallery_3").attr('alt',t[lang]['image_gallery_3']);
+        $("#image_gallery_4").attr('alt',t[lang]['image_gallery_4']);
+		$("#image_gallery_5").attr('alt',t[lang]['image_gallery_5']);
+		$("#image_gallery_6").attr('alt',t[lang]['image_gallery_6']);
     } );
     
     function setCookie(cname, cvalue, exdays) {
