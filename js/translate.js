@@ -33,23 +33,23 @@ var langs = ["en", "de", "es"];
 	t['es']['image_gallery_1']='Habitación doble';
 	
 	t['en']['image_gallery_2']='Double Room';
-	t['de']['image_gallery_2']='Doppeltzimmer';
+	t['de']['image_gallery_2']='Doppelzimmer';
 	t['es']['image_gallery_2']='Habitación doble';
 	
 	t['en']['image_gallery_3']='Double Room';
-	t['de']['image_gallery_3']='Doppeltzimmer';
+	t['de']['image_gallery_3']='Doppelzimmer';
 	t['es']['image_gallery_3']='Habitación doble';
 	
 	t['en']['image_gallery_4']='Double Room';
-	t['de']['image_gallery_4']='Doppeltzimmer';
+	t['de']['image_gallery_4']='Doppelzimmer';
 	t['es']['image_gallery_4']='Habitación doble';
 	
 	t['en']['image_gallery_5']='Room with attached Bathroom';
-	t['de']['image_gallery_5']='Doppeltzimmer mit Bad';
+	t['de']['image_gallery_5']='Doppelzimmer mit Bad';
 	t['es']['image_gallery_5']='Habitación doble con baño';
 	
 	t['en']['image_gallery_6']='Room with attached Bathroom';
-	t['de']['image_gallery_6']='Doppeltzimmer mit Bad';
+	t['de']['image_gallery_6']='Doppelzimmer mit Bad';
 	t['es']['image_gallery_6']='Habitación doble con baño';
 		
 	t['en']['headline_2_text_2']='Double room with Attached Bathroom: 2500 NRs/Room/Night (max. 2 Persons)';
